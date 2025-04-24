@@ -226,6 +226,9 @@ public class AVLDrevo {
     }
 
     public void ktiNajmanjsi(int indeks) {
+        if (indeks < 1) {
+            indeks = 1;
+        }
         Integer rezultat = ktiNajmanjsi(koren, indeks);
         System.out.println(rezultat == null ? "x" : rezultat);
     }
